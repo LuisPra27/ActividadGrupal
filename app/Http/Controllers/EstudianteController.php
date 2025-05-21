@@ -3,12 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Estudiante;
-use Illuminate\Support\Facades\Log;
-
 
 class EstudianteController extends Controller
 {
+<<<<<<< HEAD
     /**
      * Display a listing of the resource.
      */
@@ -173,6 +171,7 @@ class EstudianteController extends Controller
 
         return response()->json(['mensaje' => 'Estudiante eliminado correctamente']);
     }
+=======
+    //
+>>>>>>> parent of ce6bea6 (AAA)
 }
-
-

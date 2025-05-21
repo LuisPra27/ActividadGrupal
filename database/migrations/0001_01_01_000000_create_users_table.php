@@ -11,15 +11,21 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
+        Schema::create('usuarios', function (Blueprint $table) {
+            $table->id('IDusuario'); // Usamos ID personalizado con nombre que tú diste
+            $table->string('nombre');
+            $table->string('correo')->unique(); // Usamos 'correo' en lugar de 'email'
+            $table->string('telefono');
+            $table->string('rol');
+
+            // Campos de autenticación estándar de Laravel
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->string('password'); // Alias de 'contraseña'
             $table->rememberToken();
+
             $table->timestamps();
-        });
+});
+
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {
             $table->string('email')->primary();

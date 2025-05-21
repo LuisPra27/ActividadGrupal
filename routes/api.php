@@ -2,13 +2,11 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ParaleloController;
-use App\Http\Controllers\EstudianteController;
-
 
 Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
+<<<<<<< HEAD
 
 // Rutas para el recurso 'estudiantes'
 Route::get('/estudiantes', [EstudianteController::class, 'index']);
@@ -26,3 +24,5 @@ Route::delete('/paralelos/{id}', [ParaleloController::class, 'destroy']);
 
 
 Route::get('/soap', [App\Http\Controllers\SoapController::class, 'consumirServicio']);
+=======
+>>>>>>> parent of ce6bea6 (AAA)
