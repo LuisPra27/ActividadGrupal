@@ -23,3 +23,6 @@ Route::post('/paralelos', [ParaleloController::class, 'store']);
 Route::get('/paralelos/{id}', [ParaleloController::class, 'show']);
 Route::put('/paralelos/{id}', [ParaleloController::class, 'update']);
 Route::delete('/paralelos/{id}', [ParaleloController::class, 'destroy']);
+
+
+Route::get('/soap', [App\Http\Controllers\SoapController::class, 'consumirServicio']);

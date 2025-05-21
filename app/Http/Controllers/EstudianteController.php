@@ -23,6 +23,7 @@ class EstudianteController extends Controller
     {
         return response()->json(Estudiante::with('paralelo')->get(), 200);
     }
+
     /**
      * Store a newly created resource in storage.
      */
