@@ -22,10 +22,13 @@ Route::get('/paralelos/{id}', [ParaleloController::class, 'show']);
 Route::put('/paralelos/{id}', [ParaleloController::class, 'update']);
 Route::delete('/paralelos/{id}', [ParaleloController::class, 'destroy']);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 Route::get('/soap', [App\Http\Controllers\SoapController::class, 'consumirServicio']);
 =======
 >>>>>>> parent of ce6bea6 (AAA)
+=======
+>>>>>>> parent of 32c601b (update)
 =======
 >>>>>>> parent of 32c601b (update)

@@ -12,7 +12,10 @@
         "php": "^8.2",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "artisaninweb/laravel-soap": "^0.3.0",
+=======
+>>>>>>> parent of 32c601b (update)
 =======
 >>>>>>> parent of 32c601b (update)
         "darkaonline/l5-swagger": "^9.0",
