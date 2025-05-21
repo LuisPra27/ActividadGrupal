@@ -4,26 +4,37 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ff5ec7d5000ab75f768e4e492122edac",
+    "content-hash": "d8ce0e8f67b4f906e7c28d5046701325",
     "packages": [
         {
             "name": "artisaninweb/laravel-soap",
-            "version": "0.2.5.10",
+            "version": "0.3.0.10",
             "source": {
                 "type": "git",
-                "url": "https://github.com/artisaninweb/laravel-soap.git",
-                "reference": "a25956372fdc095a2206a5cacf76d12b1b11c084"
+                "url": "https://github.com/notfalsedev/laravel-soap.git",
+                "reference": "809073fe1116e3e3daadcf8571fc58b0a9603574"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/artisaninweb/laravel-soap/zipball/a25956372fdc095a2206a5cacf76d12b1b11c084",
-                "reference": "a25956372fdc095a2206a5cacf76d12b1b11c084",
+                "url": "https://api.github.com/repos/notfalsedev/laravel-soap/zipball/809073fe1116e3e3daadcf8571fc58b0a9603574",
+                "reference": "809073fe1116e3e3daadcf8571fc58b0a9603574",
                 "shasum": ""
             },
             "require": {
+                "ext-soap": "*",
                 "php": ">=5.4.0"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "SoapWrapper": "Artisaninweb\\SoapWrapper\\Facade"
+                    },
+                    "providers": [
+                        "Artisaninweb\\SoapWrapper\\ServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Artisaninweb\\SoapWrapper": "src/"
@@ -47,10 +58,10 @@
                 "wrapper"
             ],
             "support": {
-                "issues": "https://github.com/artisaninweb/laravel-soap/issues",
-                "source": "https://github.com/artisaninweb/laravel-soap/tree/master"
+                "issues": "https://github.com/notfalsedev/laravel-soap/issues",
+                "source": "https://github.com/notfalsedev/laravel-soap/tree/0.3.0.10"
             },
-            "time": "2015-06-17T11:22:29+00:00"
+            "time": "2021-05-04T14:48:03+00:00"
         },
         {
             "name": "brick/math",
